@@ -1,0 +1,152 @@
+:root{
+    --primary-color: #033949;
+    --secondary-color: #03ff15;
+
+}
+
+
+img{
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "navbar navbar"
+    "main main";
+
+
+}
+
+header{
+    grid-area: header;
+    background-image: url("/fotos/design2.jpg");
+    background-size: cover;
+    height: 30vw;
+    text-align: center;
+    border-radius: 0 20px;
+
+}
+
+#logo{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+
+    
+    
+  }
+  h1{
+      position: relative;
+      z-index: 2;
+      font-size: 250%;
+      color: var(--primary-color);
+      text-shadow: 0 0 5px #fff;
+      text-shadow: 2px 2px 2px green;
+  }
+  h3{
+      font-size: 30px;
+  }
+  p{
+      font-size: 20px;
+  }
+      
+ .navbar{
+     grid-area: navbar;
+     height: 15vh;
+     background-color: var(--primary-color);
+
+ 
+ }
+
+ nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+    
+
+ }
+ a{
+    margin:30px 30px 10px 0;
+    color: #fff;
+    height: 10px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ nav a:hover{
+    color: #fff;
+    color: black;
+    background-color: var(--secondary-color);
+
+
+
+
+ }
+ .navbar h2{
+
+    height: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 25px 25px 0;
+
+ }
+
+ 
+
+main{
+    grid-area: main;
+    display: flex;
+    direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 0;
+    
+
+
+}
+
+main>article{
+
+
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+   th td {
+    border: 1px solid #cecfd5;
+    padding: 10px 15px;
+    border-spacing: 4px;
+    
+
+    
+  }
+  
+
